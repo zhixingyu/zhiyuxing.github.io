@@ -6,9 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a third year Doctoral student from [School of Computer science and engineering](https://www.xaut.edu.cn/), [Xi'an university of technology](https://www.pku.edu.cn/). My research interest includes multimodal fusion, affective computing, and machine learning.
+I'm a third year Doctoral student from School of Computer science and engineering, [Xi'an university of technology](https://www.xaut.edu.cn/). My research interest includes multimodal fusion, affective computing, and machine learning.
 
-I am very fortunate to be advised by [Prof. Junhuai Li](https://scholar.google.com/citations?user=TJNhQfgAAAAJ&hl=zh-CN) from [School of Computer Science and engineering].
+I am very fortunate to be advised by [Prof. Junhuai Li](https://scholar.google.com/citations?user=TJNhQfgAAAAJ&hl=zh-CN) from School of Computer Science and engineering.
 
 
 Publications
