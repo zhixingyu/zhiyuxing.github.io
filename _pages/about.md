@@ -23,7 +23,6 @@ Publications
 
 \[5\]Junhuai Li, Chuang Lin, Huaijun Wang, **Yuxing Zhi**, Jing Chen and Tao Huang, "Adversarial Training and Cross-modal Feature Fusion in Multimodal Sentiment Analysis," ICASSP(CCF B), 2025. [link](https://ieeexplore.ieee.org/document/10890023)
 
-
 Projects
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
