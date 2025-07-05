@@ -13,11 +13,15 @@ I am very fortunate to be advised by [Prof. Junhuai Li](https://scholar.google.c
 
 Publications
 ======
-**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei. Wei, "A Multimodal Sentiment Analysis Method Based on Fuzzy Attention Fusion,"  IEEE Transactions on Fuzzy Systems (JCR Q1, CCF B, IF=11.9), 2024.[link](https://ieeexplore.ieee.org/document/10613477).
+**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei. Wei, "A Multimodal Sentiment Analysis Method Based on Fuzzy Attention Fusion,"  IEEE Transactions on Fuzzy Systems (JCR Q1, CCF B, IF=11.9), 2024. [link](https://ieeexplore.ieee.org/document/10613477).
 
-**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Ting Cao, "A Fine-Grained Tri-Modal Interaction Model for Multimodal Sentiment Analysis," ICASSP 2024 (CCF B)[Link](https://ieeexplore.ieee.org/document/10447872). 
+**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Ting Cao, "A Fine-Grained Tri-Modal Interaction Model for Multimodal Sentiment Analysis," ICASSP 2024 (CCF B). [Link](https://ieeexplore.ieee.org/document/10447872). 
+
 **Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei. Wei, "A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion," IEEE Transactions on Computational Social Systems(JCR Q1, CCF C), 2025, Accepted.
 
+Yue Li, **Yuxing Zhi**, Huai Wang, Yufan Guo, Kan Wang, Rong Fei and Junhuai Li. "Cross-domain human activity recognition based on deviation-graph constrained Non-Negative Matrix Factorization," Engineering Applications of Artificial Intelligence(JCR Q1, IF=8.0), 2025. [link](https://www.sciencedirect.com/science/article/pii/S095219762500661X)
+
+Junhuai Li, Chuang Lin, Huaijun Wang, **Yuxing Zhi**, Jing Chen and Tao Huang, "Adversarial Training and Cross-modal Feature Fusion in Multimodal Sentiment Analysis," ICASSP(CCF B), 2025. [link](https://ieeexplore.ieee.org/document/10890023)
 
 Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
 
