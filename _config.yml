@@ -24,11 +24,11 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Yuxing Zhi"
-  pronouns         : # example: "she/her"  
+  #pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "XI'an"
-  employer         : "Red Brick University"
-  uri              : # URL
+  employer         : "Xi'an university of technology"
+  #uri              : # URL
   email            : "zyxing25@163.com" 
 
   # Academic websites
