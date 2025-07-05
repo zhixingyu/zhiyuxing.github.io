@@ -17,7 +17,7 @@ Publications
 
 \[2\]**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Ting Cao, "A Fine-Grained Tri-Modal Interaction Model for Multimodal Sentiment Analysis," ICASSP 2024 (CCF B). [Link](https://ieeexplore.ieee.org/document/10447872). 
 
-\[3\]**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei. Wei, "A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion," IEEE Transactions on Computational Social Systems(JCR Q1, CCF C), 2025, Accepted.
+\[3\]**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei Wei, "A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion," IEEE Transactions on Computational Social Systems(JCR Q1, CCF C), 2025, Accepted.
 
 \[4\]Yue Li, **Yuxing Zhi**, Huai Wang, Yufan Guo, Kan Wang, Rong Fei and Junhuai Li. "Cross-domain human activity recognition based on deviation-graph constrained Non-Negative Matrix Factorization," Engineering Applications of Artificial Intelligence(JCR Q1, IF=8.0), 2025. [link](https://www.sciencedirect.com/science/article/pii/S095219762500661X)
 
