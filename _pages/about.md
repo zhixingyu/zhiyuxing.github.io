@@ -15,7 +15,7 @@ I am very fortunate to be advised by [Prof. Junhuai Li](https://scholar.google.c
 
 Publications
 ======
-\[1\]**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei Wei, "A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion," IEEE Transactions on Computational Social Systems(JCR Q1, CCF C), 2025, Accepted.
+\[1\]**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Wei Wei, "A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion," IEEE Transactions on Computational Social Systems(JCR Q1, CCF C), 2025, Early access.[link](https://ieeexplore.ieee.org/document/11083650).
 
 \[2\]**Yuxing Zhi**, Junhuai Li, Huaijun Wang, Jing Chen and Ting Cao, "A Fine-Grained Tri-Modal Interaction Model for Multimodal Sentiment Analysis," ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (CCF B). [Link](https://ieeexplore.ieee.org/document/10447872). 
 
