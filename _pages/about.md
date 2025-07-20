@@ -29,10 +29,9 @@ Publications
 
 Projects
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+1. **Emotionally Interactive Companion Based on Large Language Models**
+   We are developing an AI-powered companion assistant that integrates **deep emotional understanding** and **personalized interaction capabilities**. Leveraging **multimodal emotion recognition technology** under both **full-modality and modality-missing scenarios**, this assistant accurately captures users' emotional states and feeds this information in real-time to a **Large Language Model (LLM)**. This process activates the LLM to generate **highly empathetic textual responses**. The system thereby delivers **real-time, personalized emotional support** and **social companionship** to users, effectively alleviating loneliness and enhancing their **psychological well-being**.
+     
+2. **Action Recognition for Children**
+  We focus on **cross-domain child action analysis** and **multimodal recognition algorithm development**. Through **video capture**, **posture parsing**, and **motion trajectory modeling**, we establish a **high-precision action assessment framework** that enables real-time analysis of physical test movements and **quantifies children's developmental capabilities**. An **emotionally interactive auxiliary module** dynamically optimizes **human-machine interface interactions**, easing children's anxiety to ensure **natural and fluid testing procedures**. Our solution achieves **full-cycle management** of action recognition, performance evaluation, and training intervention, significantly enhancing the **scientific rigor** and **timeliness** of children's motor development.
 
