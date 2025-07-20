@@ -29,11 +29,11 @@ Publications
 
 Projects
 ======
-1. **Emotionally Interactive Companion Based on Large Language Models**
+- **Emotionally Interactive Companion Based on Large Language Models**
    
    We are developing an AI-powered companion assistant that integrates **deep emotional understanding** and **personalized interaction capabilities**. Leveraging **multimodal emotion recognition technology** under both **full-modality and modality-missing scenarios**, this assistant accurately captures users' emotional states and feeds this information in real-time to a **Large Language Model (LLM)**. This process activates the LLM to generate **highly empathetic textual responses**. The system thereby delivers **real-time, personalized emotional support** and **social companionship** to users, effectively alleviating loneliness and enhancing their **psychological well-being**.
      
-3. **Action Recognition for Children**
+- **Action Recognition for Children**
 
   We focus on **cross-domain child action analysis** and **multimodal recognition algorithm development**. Through **video capture**, **posture parsing**, and **motion trajectory modeling**, we establish a **high-precision action assessment framework** that enables real-time analysis of physical test movements and **quantifies children's developmental capabilities**. An **emotionally interactive auxiliary module** dynamically optimizes **human-machine interface interactions**, easing children's anxiety to ensure **natural and fluid testing procedures**. Our solution achieves **full-cycle management** of action recognition, performance evaluation, and training intervention, significantly enhancing the **scientific rigor** and **timeliness** of children's motor development.
 
