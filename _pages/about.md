@@ -27,6 +27,8 @@ Publications
 
 \[6\]Junhuai Li, Chuang Lin, Huaijun Wang, **Yuxing Zhi**, Jing Chen and Tao Huang, "Adversarial Training and Cross-modal Feature Fusion in Multimodal Sentiment Analysis," ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (CCF B), 2025. [link](https://ieeexplore.ieee.org/document/10890023)
 
+\[7\]Minghua Zhao, **Yuxing Zhi**, Fei Yuan, Junhuai Li, Jing Hu, Shuangli Du, Zhenghao Shi. Deep-block network for AU recognition and expression migration[J]. Multimedia Tools and Applications(中科院3区，JCR Q1), 2023,82.[link](https://link.springer.com/article/10.1007/s11042-023-14527-6)
+
 Projects
 ======
 - **Emotionally Interactive Companion Based on Large Language Models**
