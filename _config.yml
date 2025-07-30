@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "avator.png"
+  avatar           : "touxiang.png"
   name             : "Yuxing Zhi"
   #pronouns         : # example: "she/her"  
   bio              : "Never stop but take it easy."
