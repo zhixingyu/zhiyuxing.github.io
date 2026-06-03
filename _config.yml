@@ -11,11 +11,11 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Yuxing Zhi's Personal Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : "https://zhixingyu.github.io/zhiyuxing.github.io/" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+name                     : &name "Yuxing Zhi"
+description              : &description "Ph.D. candidate in Computer Science and Technology at Xi'an University of Technology"
+url                      : "https://zhixingyu.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "zhixingyu/zhiyuxing.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -26,8 +26,8 @@ author:
   name             : "Yuxing Zhi"
   #pronouns         : # example: "she/her"  
   bio              : "Never stop but take it easy."
-  location         : "XI'an, China"
-  employer         : "Xi'an university of technology"
+  location         : "Shaanxi, China"
+  employer         : "Xi'an University of Technology"
   #uri              : # URL
   email            : "zyxing25@163.com" 
 
@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : #"academicpages"
+  github           : "zhixingyu"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -79,8 +79,6 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
