@@ -5,6 +5,7 @@ category: manuscripts
 permalink: /publication/2026-01-01-multiview-cross-modal-fusion
 excerpt: "Multi-view cross-modal fusion for multimodal sentiment analysis."
 date: 2026-01-01
+paperurl: "https://ieeexplore.ieee.org/abstract/document/11083650"
 venue: "IEEE Transactions on Computational Social Systems"
 citation: "Yuxing Zhi, Junhuai Li, Huaijun Wang, Jing Chen. &quot;A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion.&quot; <i>IEEE Transactions on Computational Social Systems</i>, 2026, 13(1): 136-151."
 ---

@@ -6,88 +6,29 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a Ph.D. candidate in Computer Science and Technology at [Xi'an University of Technology](https://www.xaut.edu.cn/), advised by [Prof. Junhuai Li](https://scholar.google.com/citations?user=TJNhQfgAAAAJ&hl=zh-CN). My research focuses on multimodal representation learning for human-centered affective, cognitive, and behavioral understanding.
+<h2 style="border-bottom: 0;">Biography</h2>
 
-My work aims to develop robust learning methods for heterogeneous data, including text, audio, visual signals, EEG, and pressure sensor data, with applications in affective computing, healthcare, and intelligent assessment.
+I am currently a Ph.D. candidate (graduating in June 2026) in the School of Computer Science and Engineering at Xi'an University of Technology, where I also received my B.Eng. and M.Eng. degrees. Supervised by Prof. Junhuai Li, my academic journey has been driven by a passion for creating intelligent systems that understand human states. I rank 1st out of 11 in my doctoral cohort with a weighted average score of 88.8/100 and am a recipient of the National Scholarship.
 
-## Education
+My research sits at the intersection of **Multimodal Learning**, **Affective Computing**, and **Physiological Signal Analysis**.
 
-**Xi'an University of Technology** | Sep. 2022 - Jun. 2026<br>
-Advisor: Prof. Junhuai Li<br>
-Ph.D. in Computer Science and Technology (Weighted Average: 88.8/100, Rank: 1/11)
 
-**Xi'an University of Technology** | Sep. 2019 - Jun. 2022<br>
-M.Eng. in Computer Science and Technology
 
-**Xi'an University of Technology** | Sep. 2015 - Jun. 2019<br>
-B.Eng. in Computer Science and Technology
+<h2 style="border-bottom: 0;">Research Interests</h2>
 
-## Research Interests
+My research focuses on multimodal representation learning for human-centered affective, cognitive, and behavioral understanding. I am particularly interested in developing robust learning methods for heterogeneous data, including text, audio, visual signals, EEG, and pressure sensor data. Key areas include:
 
-My research focuses on multimodal representation learning for human-centered affective, cognitive, and behavioral understanding. I am particularly interested in developing robust learning methods for heterogeneous data, including text, audio, visual signals, EEG, and pressure sensor data. My work aims to improve multimodal fusion, cross-modal alignment, physiological signal modeling, and sensor-based human activity recognition for applications in affective computing, healthcare, and intelligent assessment.
+* **Multimodal Learning & Affective Computing:** Robust sentiment analysis and emotion recognition.
+* **Cross-modal Alignment & Fusion:** Effective integration strategies for heterogeneous modalities.
+* **Physiological Signal Modeling:** EEG-based affective computing and attention modeling (e.g., ADHD assessment).
+* **Human Activity Recognition (HAR):** Wearable sensor-based action recognition and movement assessment.
 
-**Keywords:**
 
-- Multimodal Learning & Affective Computing
-- Cross-modal Alignment & Multimodal Fusion
-- Uncertainty-aware Learning & Robust Representation
-- Human-centered AI & Physiological Signal Analysis
 
-## Research Experience
+<h2 style="border-bottom: 0;">News & Updates</h2>
 
-### Multimodal Representation Learning for Affective Computing
-
-**Role:** Project Lead (2022-2026, Completed, University-Enterprise Collaborative Research Fund)
-
-This project focuses on representation learning-based multimodal affective computing, including multimodal sentiment analysis and emotion recognition. I investigate how to effectively integrate heterogeneous modalities such as text, audio, and visual signals for robust affective representation.
-
-- Developed multimodal fusion, cross-modal alignment, and robust representation learning methods.
-- Led experiments, model implementation, manuscript writing, and student supervision.
-
-### EEG-based Emotion Recognition and Attention Modeling
-
-**Role:** Core Member (2025-Present, Collaborative Research Project with Hospital)
-
-This project investigates EEG-based affective and cognitive state recognition, with emphasis on emotion recognition, attention modeling, and ADHD-oriented assessment. The research aims to explore brain signal representation learning and game-based intervention strategies for attention-related applications.
-
-- Contributed to EEG experimental design, data analysis, brain network modeling, and model evaluation.
-- Assisted with student supervision, proposal preparation, technical reports, and manuscript writing.
-
-### Human Activity Recognition and Assessment with Wearable Sensor
-
-**Role:** Core Member (2024-Present, National Natural Science Foundation of China)
-
-This project focuses on wearable sensor-based human activity recognition and movement assessment, including IMU-based action recognition for children and abnormal gait recognition using pressure sensors and IMU signals. The goal is to develop robust sensing and learning methods for movement analysis and health-related assessment.
-
-- Participated in sensor experiment design, data collection, multimodal fusion, and model evaluation.
-- Assisted with student guidance, data analysis, project writing, and paper preparation.
-
-## Skills and Interests
-
-- Programming: Python, MATLAB, C/C++
-- Deep Learning Frameworks: PyTorch, TensorFlow
-- Research Skills: Multimodal Learning, Affective Computing, Cross-modal Representation Learning, Heterogeneous Data Fusion
-- Languages: Chinese, English
-- Interests & Service: Half-marathon running; volunteer work for stray animal welfare; outdoor activities
-
-## Selected Publications
-
-Published over 10 academic papers, including more than 5 first-author publications. See the [Publications](/publications/) page for the full selected list.
-
-## Teaching Experience
-
-1. Teaching Assistant, Introduction to Engineering, Xi'an University of Technology, Spring 2022. Assisted with course organization, classroom support, and student communication.
-2. Teaching Assistant, Computer Network Laboratory, Xi'an University of Technology, Fall 2024. Assisted with experiment demonstrations, troubleshooting, and lab report evaluation.
-
-## Conference Presentations
-
-See the [Talks](/talks/) page for invited talks, oral presentations, poster presentations, and conference participation.
-
-## Honors & Awards
-
-- National Scholarship for Doctoral Students, Dec. 2024
-- Academic Scholarship for Doctoral Students, Xi'an University of Technology, Dec. 2022 and Dec. 2025
-- Outstanding Graduate Student / Outstanding Graduate Student Leader, Xi'an University of Technology, Dec. 2023 and Dec. 2024
-- Outstanding Master's Thesis Award, Xi'an University of Technology, Jun. 2022
-- The 3rd Prize, The 9th Shaanxi Graduate Innovation Achievement Exhibition, Shaanxi Province, Jun. 2025; ranked 1st among team members
-
+* **[2026.01]** Our paper "A Multimodal Sentiment Analysis Approach Based on Multi-view Cross-modal Fusion" was published in *IEEE Transactions on Computational Social Systems*.
+* **[2025.12]** Honored with the Academic Scholarship for Doctoral Students (Top tier).
+* **[2025.11]** Delivered an Oral Presentation at the 11th International Symposium on Information Technology and Application in Okinawa, Japan.
+* **[2025.06]** Won the 3rd Prize (Ranked 1st in the team) at the 9th Shaanxi Graduate Innovation Achievement Exhibition.
+* **[2024.12]** Awarded the prestigious **National Scholarship for Doctoral Students**.

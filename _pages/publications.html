@@ -12,6 +12,7 @@ author_profile: true
 <p>Published over 10 academic papers, including more than 5 first-author publications. Selected publications are organized below by publication type.</p>
 
 {% include base_path %}
+{% assign publication_index = 0 %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
@@ -21,16 +22,49 @@ author_profile: true
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
+      {% assign first_author = post.citation | slice: 0, 10 %}
+      {% if first_author != "Yuxing Zhi" %}
+        {% continue %}
+      {% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% assign publication_index = publication_index | plus: 1 %}
+      {% include archive-single.html publication_index=publication_index %}
+    {% endfor %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% assign first_author = post.citation | slice: 0, 10 %}
+      {% if first_author == "Yuxing Zhi" %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% assign publication_index = publication_index | plus: 1 %}
+      {% include archive-single.html publication_index=publication_index %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% assign first_author = post.citation | slice: 0, 10 %}
+    {% if first_author != "Yuxing Zhi" %}
+      {% continue %}
+    {% endif %}
+    {% assign publication_index = publication_index | plus: 1 %}
+    {% include archive-single.html publication_index=publication_index %}
+  {% endfor %}
+  {% for post in site.publications reversed %}
+    {% assign first_author = post.citation | slice: 0, 10 %}
+    {% if first_author == "Yuxing Zhi" %}
+      {% continue %}
+    {% endif %}
+    {% assign publication_index = publication_index | plus: 1 %}
+    {% include archive-single.html publication_index=publication_index %}
   {% endfor %}
 {% endif %}
 
