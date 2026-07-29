@@ -8,7 +8,7 @@ redirect_from:
 ---
 <h2 style="border-bottom: 0;">Biography</h2>
 
-I am currently a Ph.D. candidate (graduating in June 2026) in the School of Computer Science and Engineering at Xi'an University of Technology, where I also received my B.Eng. and M.Eng. degrees. Supervised by Prof. Junhuai Li, my academic journey has been driven by a passion for creating intelligent systems that understand human states. I rank 1st out of 11 in my doctoral cohort with a weighted average score of 88.8/100 and am a recipient of the National Scholarship.
+I received my Ph.D. degree in Computer Science and Technology from the School of Computer Science and Engineering at Xi'an University of Technology in June 2026, where I also received my B.Eng. and M.Eng. degrees. Supervised by Prof. Junhuai Li, my academic journey has been driven by a passion for creating intelligent systems that understand human states. I ranked 1st out of 11 in my doctoral cohort with a weighted average score of 88.8/100 and am a recipient of the National Scholarship.
 
 My research sits at the intersection of **Multimodal Learning**, **Affective Computing**, and **Physiological Signal Analysis**.
 
