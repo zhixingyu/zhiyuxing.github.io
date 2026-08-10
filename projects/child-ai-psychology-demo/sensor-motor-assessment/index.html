@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于智能传感融合的儿童运动功能评估与异常步态识别系统</title>
+    <style>
+        :root {
+            --primary-color: #20b2aa; /* 健康海浪绿 */
+            --primary-dark: #008b8b;
+            --accent-color: #ff7f50; /* 活力珊瑚橙 */
+            --bg-color: #f5fffa; /* 薄荷白背景 */
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-light: #546e7a;
+            --shadow-md: 0 10px 30px rgba(0, 139, 139, 0.08);
+            --shadow-hover: 0 15px 40px rgba(32, 178, 170, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* 基础动画 */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 头部区域 */
+        header {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%);
+            padding: 90px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+            animation: fadeUp 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: #00695c;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: #004d40;
+            font-weight: 400;
+        }
+
+        /* 背景运动轨迹装饰 */
+        .track-line {
+            position: absolute;
+            width: 200%;
+            height: 100px;
+            border-top: 2px dashed rgba(32, 178, 170, 0.3);
+            border-radius: 50%;
+            top: 20%;
+            left: -50%;
+            transform: rotate(-5deg);
+            pointer-events: none;
+        }
+        .track-line:nth-child(2) { top: 60%; transform: rotate(5deg); opacity: 0.5; }
+
+        /* 容器通用 */
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: var(--accent-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* 简介区块 */
+        .intro-box {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            border-left: 8px solid var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .intro-box p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        /* 核心研究卡片布局 */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        /* --- CSS 微动画设计 --- */
+        .anim-window {
+            height: 150px;
+            background: #f4fbfb;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 1px solid #e0f2f1;
+            overflow: hidden;
+        }
+
+        /* 动画1: 传感采集 (IMU与鞋垫) */
+        .shoe { font-size: 3rem; position: relative; z-index: 2; animation: walk 2s infinite ease-in-out alternate; }
+        .imu-signal {
+            position: absolute;
+            width: 40px; height: 40px;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            opacity: 0;
+            animation: signalPulse 2s infinite;
+        }
+        @keyframes walk { 0% { transform: translateY(0) rotate(-10deg); } 100% { transform: translateY(-15px) rotate(10deg); } }
+        @keyframes signalPulse { 0% { transform: scale(0.5); opacity: 1; } 100% { transform: scale(2.5); opacity: 0; } }
+
+        /* 动画2: 足底压力热力扫描 */
+        .footprint-box { position: relative; width: 60px; height: 100px; }
+        .foot-outline { font-size: 4rem; color: #cfd8dc; position: absolute; top: -10px; left: 0; }
+        .pressure-scan {
+            position: absolute;
+            bottom: 0; left: 10px; right: 10px;
+            height: 0%;
+            background: linear-gradient(to top, #4caf50, #ffeb3b, #f44336);
+            opacity: 0.7;
+            border-radius: 30px;
+            animation: scanUp 3s infinite ease-in-out;
+            mix-blend-mode: multiply;
+        }
+        @keyframes scanUp { 0%, 100% { height: 10%; } 50% { height: 90%; } }
+
+        /* 动画3: 运动功能数字评估 (趋势图) */
+        .chart-box { display: flex; align-items: flex-end; gap: 8px; height: 60px; }
+        .chart-bar { width: 15px; background: var(--primary-color); border-radius: 3px 3px 0 0; }
+        .chart-bar:nth-child(1) { height: 20px; animation: growBar1 2s infinite alternate; }
+        .chart-bar:nth-child(2) { height: 35px; animation: growBar2 2s infinite alternate 0.2s; background: var(--primary-dark); }
+        .chart-bar:nth-child(3) { height: 50px; animation: growBar3 2s infinite alternate 0.4s; }
+        .chart-bar:nth-child(4) { height: 75px; animation: growBar4 2s infinite alternate 0.6s; background: var(--accent-color); }
+        @keyframes growBar1 { 0% { height: 10px; } 100% { height: 25px; } }
+        @keyframes growBar2 { 0% { height: 20px; } 100% { height: 45px; } }
+        @keyframes growBar3 { 0% { height: 30px; } 100% { height: 65px; } }
+        @keyframes growBar4 { 0% { height: 40px; } 100% { height: 90px; } }
+
+        .card h3 {
+            font-size: 1.25rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .research-flow-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 0 18px;
+            border-radius: 12px;
+            border: 1px solid #dcefeb;
+            box-shadow: 0 4px 12px rgba(38, 166, 154, 0.08);
+        }
+
+        .card ul { list-style: none; }
+        .card ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        .card ul li::before {
+            content: '📌';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.9rem;
+        }
+
+        /* 预期成果 */
+        .outcomes-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .outcome-badge {
+            flex: 1 1 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: var(--shadow-md);
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .outcome-badge:hover {
+            border-color: var(--accent-color);
+            transform: scale(1.03);
+        }
+
+        .badge-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        /* 滚动渐显 */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #e0f2f1;
+            color: var(--text-light);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="track-line"></div>
+        <div class="track-line"></div>
+        <div class="header-content">
+            <h1>基于智能传感融合的儿童运动功能评估与异常步态识别系统</h1>
+            <p class="hero-subtitle">精准感知 每一步成长 —— 赋能儿童足部异常与运动障碍的数字化康复</p>
+        </div>
+    </header>
+
+    <section class="container reveal">
+        <h2 class="section-title">项目简介</h2>
+        <div class="intro-box">
+            <p>儿童运动发育异常、足部形态异常以及步态障碍会严重影响儿童的身体发育和长期运动能力。目前临床运动功能评价主要依赖医生经验观察和单次测试，难以实现<strong>连续化、客观化和精细化</strong>分析。</p>
+            <p>本项目面向儿童运动发育评估和康复辅助需求，构建融合<strong>智能压力鞋垫、惯性传感器（IMU）和人工智能算法</strong>的儿童步态智能分析系统。通过实时采集儿童行走过程中的足底压力分布、身体运动轨迹和步态动力学信息，建立儿童运动模式数字化表征模型，实现对异常步态、高足弓、低足弓等运动功能异常状态的自动识别与辅助评估。</p>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <h2 class="section-title">主要研究内容</h2>
+        <div class="research-grid">
+            
+            <!-- 内容 1 -->
+            <div class="card">
+                <div class="anim-window">
+                    <div class="shoe">👟</div>
+                    <div class="imu-signal"></div>
+                </div>
+                <h3>儿童步态多源传感数据采集</h3>
+                <img class="research-flow-image" src="儿童情绪识别流程 (6).png" alt="儿童步态多源传感数据采集流程图" loading="lazy">
+                <ul>
+                    <li>利用柔性压力鞋垫获取足底压力变化</li>
+                    <li>利用 IMU 传感器采集步态运动信息</li>
+                    <li>构建儿童自然行走状态下的数据采集系统</li>
+                </ul>
+            </div>
+
+            <!-- 内容 2 -->
+            <div class="card">
+                <div class="anim-window">
+                    <div class="footprint-box">
+                        <div class="foot-outline">👣</div>
+                        <div class="pressure-scan"></div>
+                    </div>
+                </div>
+                <h3>智能步态模式分析与异常识别</h3>
+                <img class="research-flow-image" src="儿童情绪识别流程 (7).png" alt="智能步态模式分析与异常识别流程图" loading="lazy">
+                <ul>
+                    <li>提取步长、步频、支撑时间、压力中心轨迹等关键指标</li>
+                    <li>建立深度学习步态识别模型</li>
+                    <li>实现高足弓、低足弓及异常步态模式智能分类</li>
+                </ul>
+            </div>
+
+            <!-- 内容 3 -->
+            <div class="card">
+                <div class="anim-window">
+                    <div class="chart-box">
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                        <div class="chart-bar"></div>
+                    </div>
+                </div>
+                <h3>儿童运动功能数字化评估</h3>
+                <img class="research-flow-image" src="儿童情绪识别流程 (8).png" alt="儿童运动功能数字化评估流程图" loading="lazy">
+                <ul>
+                    <li>构建儿童个体化运动能力评价模型</li>
+                    <li>分析运动发育过程中的异常变化趋势</li>
+                    <li>辅助医生进行早期筛查和康复指导</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <h2 class="section-title">预期成果</h2>
+        <div class="outcomes-wrap">
+            <div class="outcome-badge">
+                <div class="badge-icon">🥾</div>
+                <div><strong>儿童智能步态采集设备</strong><br><span style="font-size:0.9rem; color:#546e7a;">穿戴舒适，实现自然状态下的无感数据监测。</span></div>
+            </div>
+            <div class="outcome-badge">
+                <div class="badge-icon">💻</div>
+                <div><strong>AI辅助运动功能评估平台</strong><br><span style="font-size:0.9rem; color:#546e7a;">提供多维度步态特征提取与可视化诊断报告。</span></div>
+            </div>
+            <div class="outcome-badge">
+                <div class="badge-icon">🏥</div>
+                <div><strong>数字化康复辅助工具</strong><br><span style="font-size:0.9rem; color:#546e7a;">面向儿童足部异常和运动障碍，指导个性化康复。</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 智能传感与运动康复实验室 | 用科技守护儿童健康步态</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                reveals.forEach(reveal => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - 80) reveal.classList.add('active');
+                });
+            };
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); 
+        });
+    </script>
+</body>
+</html>

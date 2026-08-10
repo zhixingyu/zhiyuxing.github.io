@@ -45,4 +45,7 @@ Here is an overview of the key research projects I have led or contributed to.
 * **Focus:** Child-centered affective computing, psychological state assessment, and AI companion intervention.
 * This project explores AI methods for supporting children's mental health through multimodal emotion perception, objective psychological state assessment, and personalized companion-based intervention. The system integrates multimodal behavioral cues, EEG-related cognitive and affective signals, and large-model-driven interaction strategies to provide interpretable perception and closed-loop supportive feedback.
 * The project emphasizes child-friendly intelligent sensing, privacy-aware psychological assessment, and human-centered AI intervention. It aims to connect multimodal emotion recognition, brain signal modeling, and interactive AI companionship for early screening, emotional support, and adaptive mental health assistance.
-* **Demo:** [Multimodal Emotion Perception and AI Companion Intervention System for Child Mental Health](/projects/child-ai-psychology-demo/)
+* **Demos:**
+  * [Multimodal Emotion Perception and AI Companion Intervention System for Child Mental Health](/projects/child-ai-psychology-demo/)
+  * [Brain-Computer Interface-based Intelligent Recognition and Closed-loop Regulation System for Child Attention Disorders](/projects/child-ai-psychology-demo/bci-attention-disorder/)
+  * [Intelligent Sensor Fusion-based Child Motor Function Assessment and Abnormal Gait Recognition System](/projects/child-ai-psychology-demo/sensor-motor-assessment/)
