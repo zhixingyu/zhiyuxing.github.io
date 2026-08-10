@@ -41,6 +41,8 @@ Here is an overview of the key research projects I have led or contributed to.
 
 ### 4. AI-enabled Child Mental Health Perception and Companion Intervention
 
+<img src="/assets/img/projects/child-mental-health-platform.png" alt="Child mental health intelligent perception and closed-loop intervention platform" style="width:100%; max-width:100%; margin: 0.5rem 0 1.25rem; border-radius: 8px;" />
+
 * **Role:** Project Lead / Core Contributor
 * **Focus:** Child-centered affective computing, psychological state assessment, and AI companion intervention.
 * This project explores AI methods for supporting children's mental health through multimodal emotion perception, objective psychological state assessment, and personalized companion-based intervention. The system integrates multimodal behavioral cues, EEG-related cognitive and affective signals, and large-model-driven interaction strategies to provide interpretable perception and closed-loop supportive feedback.
