@@ -36,3 +36,13 @@ Here is an overview of the key research projects I have led or contributed to.
 * This project focuses on human activity recognition and movement assessment using wearable and contact sensors, including IMU and pressure sensor data. The research aims to develop learning-based methods for modeling multi-source sensor signals and understanding human movement patterns. Application scenarios include children’s action recognition and assessment, abnormal gait recognition, and health-related movement analysis. 
 * My work includes supporting experiment protocol design, analyzing IMU and pressure sensor data, and developing learning models for activity recognition and movement assessment. I also guided master’s students in data preprocessing, model implementation, result analysis, and paper preparation.
 
+
+
+
+### 4. AI-enabled Child Mental Health Perception and Companion Intervention
+
+* **Role:** Project Lead / Core Contributor
+* **Focus:** Child-centered affective computing, psychological state assessment, and AI companion intervention.
+* This project explores AI methods for supporting children's mental health through multimodal emotion perception, objective psychological state assessment, and personalized companion-based intervention. The system integrates multimodal behavioral cues, EEG-related cognitive and affective signals, and large-model-driven interaction strategies to provide interpretable perception and closed-loop supportive feedback.
+* The project emphasizes child-friendly intelligent sensing, privacy-aware psychological assessment, and human-centered AI intervention. It aims to connect multimodal emotion recognition, brain signal modeling, and interactive AI companionship for early screening, emotional support, and adaptive mental health assistance.
+* **Demo:** [Multimodal Emotion Perception and AI Companion Intervention System for Child Mental Health](/projects/child-ai-psychology-demo/)
